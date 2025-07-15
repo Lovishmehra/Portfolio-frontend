@@ -1,4 +1,4 @@
-import './Contact.css'
+import './Contact.css';
 import { useState } from 'react';
 
 function Contact() {
@@ -12,18 +12,20 @@ function Contact() {
     e.preventDefault();
     setStatus('');
     setLoading(true);
+
     try {
-      const res = await fetch('http://localhost:5000/api/contact', {
+      const res = await fetch('https://portfolio-backend-6yq1.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, message })
       });
-      
+
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
       }
-      
+
       const data = await res.json();
+
       if (data.success) {
         setStatus('Message sent successfully!');
         setName('');
@@ -36,6 +38,7 @@ function Contact() {
       console.error('Contact form error:', err);
       setStatus(`Failed to send message: ${err.message}`);
     }
+
     setLoading(false);
   };
 
