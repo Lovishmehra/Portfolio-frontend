@@ -1,0 +1,366 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  background: linear-gradient(135deg, #181e2a 0%, #232b3e 100%);
+  scroll-padding: 40px;
+  overflow-x: hidden;
+}
+
+.Background-class {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Glassmorphism Card */
+.Introduction {
+  width: 92%;
+  max-width: 100%; 
+  padding: 30px; 
+  min-height: 85vh;
+  background: rgb(23, 28, 59);
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5); 
+  margin: 0 auto; 
+  transition: box-shadow 0.3s cubic-bezier(.4,2,.6,1), transform 0.3s cubic-bezier(.4,2,.6,1), border-color 0.3s cubic-bezier(.4,2,.6,1);
+  border: 1.5px solid rgba(36, 78, 69, 0.5);
+  box-shadow: 0 8px 32px rgba(36, 78, 69, 0.18);
+  margin-top: 40px;
+
+}
+
+.Introduction:hover {
+  transform: scale(1.015);
+  box-shadow: 0 16px 48px rgba(36, 78, 69, 0.28);
+  border-color: #43e97b;
+}
+
+/* Profile photo container */
+.photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 40px auto;
+  position: relative;
+}
+
+
+
+.photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid rgb(69, 71, 95);
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+   image-rendering: auto;
+}
+
+.photo img:hover {
+  transition: 1s ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(95, 167, 244, 0.3);
+}
+
+.Lovish-Mehra {
+  margin-top: 20px;
+  font-size: 3rem;
+  line-height: 0.5;
+  color: #ffffff;
+  animation: fadeInUp 1s ease 0.5s both;
+}
+
+.Specialization {
+  font-size: 1.2rem;
+  color: rgb(144, 193, 249);
+  font-weight: 600;
+  margin-top: 5px;
+  animation: fadeInUp 1s ease 0.7s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.introo{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+/* Paragraph text blocks */
+.Introduction2,
+.Introduction3 {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: rgb(174, 179, 186);
+  line-height: 1.4;
+}
+/* Optional: anchor target styling fix if using #home */
+#home {
+  /* min-height: 100vh; */
+}
+.Socials{
+  margin-left: 25px;
+}
+.Socials a{
+  margin-right: 20px;
+  display:inline-block;
+  justify-content: center; 
+  color:#dcdcdc;
+}
+.Socials a:hover{
+  color:#0b0e10;
+  transition: 1s ease-in-out;
+  transform: scale(1.1);
+}
+
+.Buttons{
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  gap:20px;
+}
+
+.Download-Resume,
+.Get-In-Touch{
+  margin-top: 0px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  color: rgba(248, 246, 246, 0.692);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Download-Resume::before,
+.Get-In-Touch::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.Download-Resume:hover::before,
+.Get-In-Touch:hover::before {
+  left: 100%;
+}
+
+.Download-Resume{
+  background: linear-gradient(135deg, rgb(36, 103, 226), rgb(23, 157, 88));
+  border: 2px solid rgb(59, 130, 246);
+  box-shadow: 0 4px 15px rgba(36, 103, 226, 0.3);
+}
+
+.Download-Resume:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(36, 103, 226, 0.4);
+  color: white;
+}
+
+.Get-In-Touch{
+  background: rgb(0, 0, 0);
+  color: rgb(34, 197, 94);
+  border: 2px solid rgb(34, 197, 94);
+  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+}
+
+.Get-In-Touch:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
+  background: rgb(34, 197, 94);
+  color: black;
+}
+
+@keyframes changecolour {
+  from{background-color: rgba(0, 0, 0, 0.3);}
+  to{background-color: rgba(248, 246, 246, 0.692);}
+  from{color: rgba(248, 246, 246, 0.692);}
+  to{color: rgba(0, 0, 0, 0.688);}
+}
+
+.Socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.Socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;        
+  background: transparent;  
+  color: #1de9b6;          
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: none;
+}
+
+.Socials a:hover {
+  color: #43e97b;             /* Slightly different accent on hover */
+  transform: translateY(1px) scale(1.12);
+  box-shadow: 0 4px 16px rgba(36, 78, 69, 0.18);
+  background: transparent;    /* No background on hover */
+}
+
+@media(max-width: 1024px) {
+  .Lovish-Mehra{
+    font-size: 2.5rem;
+  }
+  .Specialization,
+  .Introduction2{
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  .Buttons{
+    gap: 16px;
+  }
+  .photo img {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (max-width: 768px) {
+  .Introduction {
+    padding: 20px 15px;
+    width: 95%;
+    margin-top: 40px;
+  }
+
+  .Lovish-Mehra {
+    font-size: 2.2rem;
+  }
+
+  .Specialization,
+  .Introduction2{
+    font-size: 1rem;
+  }
+
+  .photo img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .Buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .Introduction {
+    width: 100%;
+    max-width: 90%;
+    padding: 16px 16px; 
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .Lovish-Mehra {
+    font-size: 2rem;
+    margin-top: 8px;
+  }
+
+  .Specialization {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    padding: 0 8px; /* ✅ Prevents text from touching edges */
+  }
+
+  .introo {
+    width: 100%;         /* ✅ Full width */
+    padding: 0 10px;      /* ✅ Add horizontal padding */
+    display: flex;
+    justify-content: center;
+  }
+
+  .Introduction2,
+  .Introduction3 {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+    padding: 0 8px;
+    text-align: center;
+  }
+
+  .Introduction3 {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .photo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 6px;
+  }
+
+  .Buttons {
+    width: 100%;
+    max-width: 250px;
+    margin: 16px auto 12px auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Download-Resume,
+  .Get-In-Touch {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+
+  .Socials {
+    margin-left: 0;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .Socials a {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+}

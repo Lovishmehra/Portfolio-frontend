@@ -1,0 +1,209 @@
+.projects-background {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 0;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.project-container {
+  width: 92%;
+  max-width: 100%;
+  padding: 30px;
+  background: rgb(17, 24, 40);
+  border-radius: 20px;
+  border: 1.5px solid rgba(36, 78, 69, 0.5);
+  box-shadow: 0 8px 32px rgba(36, 78, 69, 0.18);
+  transition: box-shadow 0.3s cubic-bezier(.4,2,.6,1), transform 0.3s cubic-bezier(.4,2,.6,1);
+}
+.project-container:hover {
+  transform: scale(1.015);
+  box-shadow: 0 16px 48px rgba(36, 78, 69, 0.28);
+  border-color: #43e97b;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff66c4;
+  margin-bottom: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ff66c4, transparent);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.project-title:hover::after {
+  width: 100px;
+}
+
+.project-title:hover {
+  text-shadow: 0 0 20px rgba(255, 102, 196, 0.3);
+  transform: scale(1.02);
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-card {
+  background: linear-gradient(to right,rgb(30, 44, 78),rgb(27, 35, 51));
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1.5px solid rgba(36, 78, 69, 0.5);
+  box-shadow: 0 8px 32px rgba(36, 78, 69, 0.18);
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s cubic-bezier(.4,2,.6,1);
+}
+.project-card:hover {
+  transform: scale(1.025);
+  box-shadow: 0 16px 48px rgba(36, 78, 69, 0.28);
+  border-color: #43e97b;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.badge {
+  background: #233a69;
+  color: #8bc3ff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  border: 1.5px solid #43e97b;
+  box-shadow: 0 4px 15px rgba(36, 78, 69, 0.18);
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+}
+.badge:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(36, 78, 69, 0.28);
+  border-color: #1de9b6;
+}
+
+.project-date {
+  color: #25cf7c;
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+.project-name {
+  color: #5caeff;
+  font-size: 1.3rem;
+  margin: 10px 0 5px;
+}
+
+.project-description {
+  color: #dcdcdc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tech-stack span {
+  background: #1f4037;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  color: #a1eac7;
+  background: #13341a;
+  border: 1px solid #26d985;
+  border: 1.5px solid #43e97b;
+  box-shadow: 0 4px 15px rgba(36, 78, 69, 0.18);
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+}
+.tech-stack span:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(36, 78, 69, 0.28);
+  border-color: #1de9b6;
+}
+
+.view-code {
+  text-align: center;
+  padding: 10px;
+  border: 1.5px solid #43e97b;
+  border-radius: 10px;
+  color: #d39eff;
+  background: black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+  box-shadow: 0 4px 15px rgba(36, 78, 69, 0.18);
+}
+.view-code:hover {
+  background: #43e97b;
+  color: #232b39;
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(36, 78, 69, 0.28);
+  border-color: #1de9b6;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .project-container {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-container {
+    padding: 20px 15px;
+    width: 95%;
+  }
+
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-container {
+    width: 100%;
+    max-width: 90%;
+    padding: 16px 16px; 
+    margin: 0 auto;
+  }
+
+  .project-title {
+    font-size: 1.8rem;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}

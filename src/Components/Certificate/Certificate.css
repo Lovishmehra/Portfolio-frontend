@@ -1,0 +1,317 @@
+/* Modern outer background */
+.certificate-background-outer {
+  margin: 50px auto 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #181e2a 0%, #232b3e 100%);
+  box-shadow: 0 0 0 2px rgba(0,255,255,0.08), 0 8px 40px 0 rgba(0,0,0,0.45);
+  max-width: 100%;
+  width: 92%;
+  /* cubic-bezier(x1, y1, x2, y2)
+         ⬇    ⬇    ⬇    ⬇
+       Start------>------End
+       Time   Speed    Time   Speed */
+  transition: box-shadow 0.3s cubic-bezier(.4,2,.6,1), border-color 0.3s cubic-bezier(.4,2,.6,1), transform 0.3s cubic-bezier(.4,2,.6,1);
+  border: 1.5px solid rgba(36, 78, 69, 0.5);
+}
+.certificate-background-outer:hover {
+  border-color: #43e97b;
+  box-shadow: 0 16px 48px rgba(36, 78, 69, 0.28);
+  transform: scale(1.01);
+}
+
+.certificate-title-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffa726;
+  text-align: center;
+  margin-bottom: 36px;
+  letter-spacing: 1px;
+}
+
+
+.section-card {
+  background: transparent;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  padding: 0 16px 16px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1.5px solid #00bcd4;
+  box-shadow: 0 2px 16px 0 rgba(0,255,255,0.04);
+  width: 90%;
+  max-width: 900px;
+}
+.section-heading {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 0 0 18px 0;
+  padding: 18px 0 0 18px;
+}
+.training-heading {
+  color: #5b9beb;
+}
+.certificates-heading {
+  color: #bd82f8;
+  text-align: left;
+}
+.training-card {
+  background: linear-gradient(90deg, #1e2a2d 80%, #1b3a3a 100%);
+  border-radius: 14px;
+  box-shadow: 0 4px 24px 0 rgba(0,255,255,0.08);
+  padding: 20px 24px;
+  margin: 0 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.training-card-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.training-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4ade80;
+}
+.training-date {
+  color: #5ea1f3;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.training-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.training-description {
+  color: #e0e0e0;
+  font-size: 1.05rem;
+}
+.training-badges {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 0.98rem;
+  font-weight: 500;
+  margin-right: 0;
+  margin-bottom: 0;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+}
+.badge-green {
+  background: #20473e;
+  color: #80e6a6;
+  border: 2px solid #20824d;
+}
+.badge-blue {
+  background: #3b315c;
+  color: #8ab9ef;
+  border: 2px solid #30599c;
+}
+.badge-purple {
+  background: #3b315c;
+  color: #d8b4fe;
+  border: 2px solid #6e42a5;
+}
+
+/* Certificates Modern Card */
+.certificates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin: 0 18px 0 18px;
+}
+.certificate-card-modern {
+  background: #23253a;
+  border: 1.5px solid #504a3f;
+  border-radius: 12px;
+  padding: 22px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 24px 0 rgba(0,0,0,0.22);
+  transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s;
+}
+.certificate-card-modern:hover {
+  transform: scale(1.025);
+  box-shadow: 0 10px 32px 0 rgba(102, 126, 234, 0.18);
+}
+.certificate-info-modern {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.certificate-name-modern {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #f6b313;
+  margin-bottom: 2px;
+}
+.certificate-details-modern {
+  color: #bdbdbd;
+  font-size: 0.98rem;
+  font-weight: 400;
+}
+.certificate-view-btn {
+  background: linear-gradient(135deg, #1de9b6 0%, #43e97b 100%);
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.22s cubic-bezier(.4,2,.6,1);
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(67,233,123,0.10);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.certificate-view-btn:hover {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: #222;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 5px 15px rgba(67, 233, 123, 0.18);
+}
+.external-link-icon {
+  font-size: 1.1em;
+  margin-left: 2px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .certificate-background-outer {
+    padding: 18px 4px;
+  }
+  .section-card {
+    padding: 0 0 10px 0;
+  }
+  .training-card, .certificates-list {
+    margin: 0 4px 0 4px;
+  }
+  .certificate-card-modern {
+    padding: 16px 10px;
+  }
+}
+@media (max-width: 600px) {
+  .certificate-title-text {
+    font-size: 1.3rem;
+  }
+  .section-heading {
+    font-size: 1.1rem;
+    padding: 10px 0 0 10px;
+  }
+  .training-card, .certificate-card-modern {
+    padding: 10px 6px;
+  }
+  .certificates-list {
+    gap: 10px;
+  }
+  .certificate-background-outer {
+    padding: 10px 8px;
+  }
+}
+@media (max-width: 480px) {
+  .certificate-background-outer {
+    width: 100%;
+    max-width: 90%;
+    padding: 16px 16px; 
+    margin: 0 auto;
+  }
+
+  .certificate-title-text {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+  }
+
+  .section-card {
+    width: 100%;
+    padding: 0 8px 12px;
+  }
+
+  .section-heading {
+    font-size: 1rem;
+    padding: 10px 8px 0;
+    margin-bottom: 12px;
+  }
+
+  .training-card {
+    padding: 10px 8px;
+    margin: 0 6px 14px;
+  }
+
+  .training-title {
+    font-size: 1rem;
+  }
+
+  .training-date {
+    font-size: 0.9rem;
+  }
+
+  .training-description {
+    font-size: 0.95rem;
+  }
+
+  .badge {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+
+  .certificate-card-modern {
+    padding: 12px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .certificate-name-modern {
+    font-size: 1rem;
+  }
+
+  .certificate-details-modern {
+    font-size: 0.9rem;
+  }
+
+  .certificate-view-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .certificates-list {
+    margin: 0 6px;
+    gap: 14px;
+  }
+}
+
+
+.section-card, .training-card, .certificate-card-modern {
+  border: 1.5px solid rgba(36, 78, 69, 0.5) !important;
+  box-shadow: 0 8px 32px rgba(36, 78, 69, 0.18) !important;
+  transition: box-shadow 0.3s cubic-bezier(.4,2,.6,1), transform 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+.certificate-card-modern:hover, .training-card:hover, .section-card:hover {
+  transform: scale(1.025);
+  box-shadow: 0 16px 48px rgba(36, 78, 69, 0.28) !important;
+  border-color: #43e97b !important;
+}
+
+.badge, .badge-green, .badge-blue, .badge-purple {
+  border: 1.5px solid #43e97b !important;
+  box-shadow: 0 4px 15px rgba(36, 78, 69, 0.18) !important;
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+.badge:hover, .badge-green:hover, .badge-blue:hover, .badge-purple:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(36, 78, 69, 0.28) !important;
+  border-color: #1de9b6 !important;
+}

@@ -1,0 +1,52 @@
+
+
+.simple-footer {
+  background: linear-gradient(135deg, #181e2a 0%, #232b3e 100%);
+  color: #E0E6ED;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  font-size: 1rem;
+  border-top: 1.5px solid rgba(36, 78, 69, 0.5);
+}
+
+.simple-footer .heart {
+  color: #ff6b6b;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.footer-content-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-copyright {
+  color: #E0E6ED;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.footer-social-row {
+  display: flex;
+  gap: 28px;
+  margin-top: 8px;
+  justify-content: center;
+}
+
+.footer-social-icon {
+  color: #4eaaff;
+  font-size: 1.7rem;
+  transition: color 0.2s, transform 0.2s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-icon:hover {
+  color: #43e97b;
+  transform: scale(1.15);
+}
+
