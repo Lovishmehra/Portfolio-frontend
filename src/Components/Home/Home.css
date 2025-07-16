@@ -18,12 +18,13 @@ html {
 }
 
 .Background-class {
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;  
   align-items: center;
   padding: 20px 0;
+  padding-top: 40px;
 }
 
 /* Glassmorphism Card */
@@ -31,17 +32,16 @@ html {
   width: 92%;
   max-width: 100%; 
   padding: 30px; 
-  min-height: 85vh;
+  height: 100%;
+  min-height: 90%;
   background: rgb(23, 28, 59);
-  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.12); 
   border-radius: 20px;
   color: #fff;
   text-align: center;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5); 
   margin: 0 auto; 
   transition: box-shadow 0.3s cubic-bezier(.4,2,.6,1), transform 0.3s cubic-bezier(.4,2,.6,1), border-color 0.3s cubic-bezier(.4,2,.6,1);
-  border: 1.5px solid rgba(36, 78, 69, 0.5);
-  box-shadow: 0 8px 32px rgba(36, 78, 69, 0.18);
   margin-top: 40px;
 
 }
@@ -289,12 +289,14 @@ html {
   }
 }
 @media (max-width: 480px) {
+  
   .Introduction {
     width: 100%;
     max-width: 90%;
     padding: 16px 16px; 
-    margin: 0 auto;
-    margin-top: 40px;
+    margin: 10px 10px;
+    /* margin-top: 50px; */
+    /* margin-top: auto; */
   }
 
   .Lovish-Mehra {

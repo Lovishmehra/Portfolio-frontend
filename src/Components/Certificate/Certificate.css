@@ -1,18 +1,21 @@
-/* Modern outer background */
+.certificate-back{
+  display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    padding: 20px 0;
+    box-sizing: border-box;
+}
 .certificate-background-outer {
-  margin: 50px auto 0 auto;
+  margin: 23px auto 0 auto;
   padding: 30px;
   border-radius: 20px;
   background: linear-gradient(135deg, #181e2a 0%, #232b3e 100%);
-  box-shadow: 0 0 0 2px rgba(0,255,255,0.08), 0 8px 40px 0 rgba(0,0,0,0.45);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
   max-width: 100%;
   width: 92%;
-  /* cubic-bezier(x1, y1, x2, y2)
-         ⬇    ⬇    ⬇    ⬇
-       Start------>------End
-       Time   Speed    Time   Speed */
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-sizing: border-box;
   transition: box-shadow 0.3s cubic-bezier(.4,2,.6,1), border-color 0.3s cubic-bezier(.4,2,.6,1), transform 0.3s cubic-bezier(.4,2,.6,1);
-  border: 1.5px solid rgba(36, 78, 69, 0.5);
 }
 .certificate-background-outer:hover {
   border-color: #43e97b;
@@ -93,6 +96,7 @@
   display: flex;
   gap: 8px;
   margin-top: 4px;
+  flex-wrap: wrap;
 }
 .badge {
   display: inline-block;
@@ -225,6 +229,7 @@
     max-width: 90%;
     padding: 16px 16px; 
     margin: 0 auto;
+    margin-top: 10px;
   }
 
   .certificate-title-text {

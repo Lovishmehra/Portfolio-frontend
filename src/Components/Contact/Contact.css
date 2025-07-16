@@ -1,21 +1,20 @@
-/* Main Background */
 .contact-background {
   min-height: 100vh;
   padding: 20px 0;
 }
 
-/* Outer Container */
 .contact-container {
   margin: 0 auto;
   margin-top: 50px;
-  background: #161629;
-  border: 1.5px solid rgba(36, 78, 69, 0.5);
+  background: linear-gradient(135deg, #181e2a 0%, #232b3e 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 20px;
   max-width: 100%;
   width: 92%;
   padding: 30px;
+
   box-sizing: border-box;
-  box-shadow: 0 8px 32px rgba(36, 78, 69, 0.18);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s cubic-bezier(.4,2,.6,1), border-color 0.3s cubic-bezier(.4,2,.6,1), transform 0.3s cubic-bezier(.4,2,.6,1);
 }
 
@@ -138,20 +137,18 @@
   color: white;
 }
 
-.Linkedin:hover {
-  background-color: #095179;
-}
 
+.Linkedin:hover, .Github:hover {
+  border-color: #43e97b;
+  color: #43e97b;
+  background: #181e2a;
+}
 .Github {
   background-color: black;
   color: white;
 }
 
-.Github:hover {
-  background-color: #333;
-}
 
-/* RIGHT SIDE */
 .contact-form {
   flex: 1;
   min-width: 300px;
@@ -287,9 +284,10 @@
 @media screen and (max-width: 480px) {
   .contact-container {
     width: 100%;
-    max-width: 90%;
-    padding: 16px 16px; 
+    max-width: 92%;
+    padding: 16px 8px;
     margin: 0 auto;
+    margin-top: 10px; 
   }
 
   .contact-heading {

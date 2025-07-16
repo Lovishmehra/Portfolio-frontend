@@ -11,18 +11,19 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
-    margin: 50px auto 0 auto;
-    border: 1.5px solid rgba(36, 78, 69, 0.5);
-    min-height: 80vh;
-    width: 92%;
-    max-width: 100%;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    min-height: auto;
+    width: 100%;
+    max-width: 92%;
     padding: 30px;
     box-sizing: border-box;
     border-radius: 20px;
     background: linear-gradient(135deg, rgb(18, 26, 44), rgb(25, 35, 60));
     align-items: center;
-    box-shadow: 0 8px 32px rgba(36, 78, 69, 0.18);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s cubic-bezier(.4,2,.6,1), border-color 0.3s cubic-bezier(.4,2,.6,1), transform 0.3s cubic-bezier(.4,2,.6,1);
+    /* overflow-x: hidden; */
 }
 
 .background-container-Skills:hover {
@@ -273,6 +274,8 @@
     .skill-button-inner {
         width: 220px;
         min-height: 200px;
+        /* margin-left: 100px; */
+        /* margin-right: 100px; */
     }
 
     .skill-button {
@@ -285,11 +288,16 @@
 }
 
 @media (max-width: 480px) {
+
     .background-container-Skills {
         width: 100%;
         max-width: 90%;
         padding: 16px 16px; 
         margin: 0 auto;
+        margin-top: 15px;
+        
+        /* margin-top: 20px; */
+
     }
 
     .skill-heading {
@@ -307,6 +315,9 @@
         width: 100%;
         max-width: 280px;
         min-height: 180px;
+        /* margin-left: 100px; */
+        /* margin-right: 100px; */
+        margin: 0 auto; 
     }
 
     .inner-Languages {

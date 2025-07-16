@@ -7,7 +7,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Certificate from "./Components/Certificate/Certificate";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
-import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
+
 // import './App.css'
 function App() {
   return (
@@ -20,7 +20,6 @@ function App() {
       <div id="certificate"><Certificate /></div>
       <div id="contact"><Contact/></div>
       <Footer />
-      <ScrollToTop />
     </>
   );
 }
