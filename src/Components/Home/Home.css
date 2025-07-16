@@ -14,7 +14,7 @@ html {
   scroll-behavior: smooth;
   background: linear-gradient(135deg, #181e2a 0%, #232b3e 100%);
   scroll-padding: 40px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .Background-class {
