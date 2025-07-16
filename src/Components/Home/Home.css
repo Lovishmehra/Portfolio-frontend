@@ -366,3 +366,8 @@ html {
     font-size: 1.2rem;
   }
 }
+@media (max-width: 600px) {
+  html, body {
+    scroll-padding-top: 70px; /* Adjust this value to match your mobile navbar height */
+  }
+}
