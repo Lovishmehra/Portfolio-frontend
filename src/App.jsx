@@ -8,7 +8,7 @@ import Certificate from "./Components/Certificate/Certificate";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 
-// import './App.css'
+
 function App() {
   return (
     <>
